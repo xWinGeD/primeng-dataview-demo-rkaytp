@@ -1,12 +1,20 @@
 :host ::ng-deep {
+    .p-dataview .p-dataview-header {
+        padding: 1rem .5rem;
+    }
+
     .p-dropdown {
         width: 14rem;
         font-weight: normal;
     }
     
     .product-name {
+        margin-bottom: 2rem;
         font-size: 1.5rem;
         font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     
     .product-description {
@@ -69,10 +77,29 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            .product-badge {
+                border-radius: 2px;
+                padding: 0.25em 0.5rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 12px;
+                letter-spacing: .3px;
+            }
+
+            .status-system {
+                background: #C8E6C9;
+                color: #256029;
+            }
+
+            .status-custom {
+                background: #FEEDAF;
+                color: #8a5340;
+            }
         }
     
         img {
-            width: 75%;
+            // width: 75%;
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
             margin: 2rem 0;
         }
