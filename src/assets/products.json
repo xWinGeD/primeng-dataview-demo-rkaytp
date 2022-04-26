@@ -4,61 +4,61 @@
 			"name": "VmWare",
 			"category": "Private Clouds",
 			"version": "System",
-			"url": ""
+			"url": "vmware.png"
 		},
 		{
 			"name": "HyperV",
 			"category": "Private Clouds",
 			"version": "System",
-			"url": ""
+			"url": "hyperv.png"
 		},
 		{
 			"name": "Olvm",
 			"category": "Private Clouds",
 			"version": "System",
-			"url": ""
+			"url": "olvm.png"
 		},
 		{
 			"name": "Azure",
 			"category": "Public Clouds",
 			"version": "System",
-			"url": ""
+			"url": "azure.png"
 		},
 		{
 			"name": "OracleCloud",
 			"category": "Public Clouds",
 			"version": "System",
-			"url": ""
+			"url": "oracle.png"
 		},
 		{
 			"name": "Google",
 			"category": "Public Clouds",
 			"version": "System",
-			"url": ""
+			"url": "google.png"
 		},
 		{
 			"name": "AWS",
 			"category": "Public Clouds",
 			"version": "System",
-			"url": ""
+			"url": "aws.png"
 		},
 		{
 			"name": "Custom",
 			"category": "Custom Requests",
 			"version": "System",
-			"url": ""
+			"url": "custom.png"
 		},
 		{
 			"name": "Ansible Playbook",
 			"category": "Custom Requests",
 			"version": "Custom",
-			"url": ""
+			"url": "ansible.png"
 		},
 		{
 			"name": "AWS flex Offering",
 			"category": "Public Clouds",
 			"version": "Custom",
-			"url": ""
+			"url": "aws.png"
 		},
 		{
 			"name": "BPER Directory service Group management",
@@ -70,13 +70,13 @@
 			"name": "Evolutio Terraform Service",
 			"category": "Custom Requests",
 			"version": "Custom",
-			"url": ""
+			"url": "terraform.png"
 		},
 		{
 			"name": "NEOM Oracle",
 			"category": "Public Clouds",
 			"version": "Custom",
-			"url": ""
+			"url": "oracle.png"
 		}
 	]
 }

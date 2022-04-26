@@ -20,13 +20,11 @@
                       <span [class]="'product-badge status-' + product.version.toLowerCase()">{{product.version}}</span>
                   </div>
                   <div class="product-grid-item-content">
-                    <div class="p-d-flex p-jc-center p-ai-center" style="height: 12rem;">
-                      <img style="max-width: 70%; max-height: 95%;" [src]="'assets/img/hypervisor/' + product.name.toLowerCase() + '.png'" [alt]="product.name"/>
-                    </div>
+                    <img [src]="'assets/img/hypervisor/' + product.url" [alt]="product.name"/>
                     <div class="product-name">{{product.name}}</div>
                   </div>
                   <div class="product-grid-item-bottom" style="justify-content: end;">
-                      <p-button label="Edit"></p-button>
+                      <p-button icon="pi pi-pencil"></p-button>
                   </div>
               </div>
           </div>
