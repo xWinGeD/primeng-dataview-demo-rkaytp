@@ -11,7 +11,7 @@ import {MenuItem} from 'primeng/api';
 })
 export class AppComponent { 
   products: Product[];
-
+ 
   items: MenuItem[];
 
   constructor(private productService: ProductService, private primengConfig: PrimeNGConfig) { }

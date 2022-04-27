@@ -1,21 +1,20 @@
-<div class="p-grid">
-  <div class="sidebar p-md-2">
-    <p>Sidebar</p>
+<div class="grid grid-nogutter">
+  <div class="sidebar hidden md:block md:col-2">
+    <p class="text-center">Sidebar</p>
   </div>
-  <div class="card p-col-12 p-md-10">
+  <div class="card col-12 md:col-10">
     <p-dataView #dv [value]="products" [paginator]="true" [rows]="12" filterBy="name" layout="grid">
-        <ng-template pTemplate="header" style="padding: 0.5rem;">
-            <div class="p-d-flex p-flex-row p-jc-between">
-              <span class="space"></span>
-              <span class="p-input-icon-left p-mb-2 p-mb-md-0" style="width: 40%;">
-                  <i class="pi pi-search"></i>
+        <ng-template pTemplate="header" style="padding: .5rem;">
+            <div class="grid">
+              <span class="p-input-icon-left col-6 lg:col-5 lg:col-offset-3 ">
+                  <i class="pi pi-search ml-2"></i>
                   <input type="search" style="width: 100%;" pInputText placeholder="Search by Name" (input)="dv.filter($event.target.value)">
               </span>
-              <p-button icon="pi pi-plus" label="Add new"></p-button>
+              <p-button class="col-6 lg:col-4 flex justify-content-end" icon="pi pi-plus" label="Add new" style="height: 3.5rem;"></p-button>
             </div>
         </ng-template>
         <ng-template let-product pTemplate="gridItem">
-          <div class="p-col-12 p-md-6 p-lg-4 p-xl-3">
+          <div class="col-12 md:col-6 lg:col-4 xl:col-3">
               <div class="product-grid-item card">
                   <div class="product-grid-item-top">
                       <div>
