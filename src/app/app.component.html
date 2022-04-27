@@ -4,36 +4,5 @@
   </div>
   <div class="card col-12 md:col-10">
     <router-outlet></router-outlet>
-    <!-- <p-dataView #dv [value]="products" [paginator]="true" [rows]="12" filterBy="name" layout="grid">
-        <ng-template pTemplate="header" style="padding: .5rem;">
-            <div class="grid">
-              <span class="p-input-icon-left col-6 lg:col-5 lg:col-offset-3 ">
-                  <i class="pi pi-search ml-2"></i>
-                  <input type="search" style="width: 100%;" pInputText placeholder="Search by Name" (input)="dv.filter($event.target.value)">
-              </span>
-              <p-button class="col-6 lg:col-4 flex justify-content-end" icon="pi pi-plus" label="Add new" style="height: 3.5rem;"></p-button>
-            </div>
-        </ng-template>
-        <ng-template let-product pTemplate="gridItem">
-          <div class="col-12 md:col-6 lg:col-4 xl:col-3">
-              <div class="product-grid-item card">
-                  <div class="product-grid-item-top">
-                      <div class="white-space-nowrap overflow-hidden text-overflow-ellipsis">
-                          <i class="pi pi-tag product-category-icon"></i>
-                          <span [attr.title]="product.category" class="product-category">{{product.category}}</span>
-                      </div>
-                      <span [class]="'product-badge status-' + product.version.toLowerCase()">{{product.version}}</span>
-                  </div>
-                  <div class="product-grid-item-content">
-                    <img [src]="'assets/img/hypervisor/' + product.url" [alt]="product.name"/>
-                    <div [attr.title]="product.name" class="product-name white-space-nowrap overflow-hidden text-overflow-ellipsis" >{{product.name}}</div>
-                  </div>
-                  <div class="product-grid-item-bottom" style="justify-content: end;">
-                      <p-button icon="pi pi-pencil"></p-button>
-                  </div>
-              </div>
-          </div>
-        </ng-template>
-    </p-dataView> -->
   </div>
 </div>
