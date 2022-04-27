@@ -163,7 +163,8 @@
 }
 
 @media screen and (max-width: 765px) {
-    .sidebar {
+    .sidebar,
+    .space {
         display: none;
     }
 }
