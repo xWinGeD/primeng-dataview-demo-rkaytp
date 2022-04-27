@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent }   from './app.component';
 import { ProductService } from './productservice';
 
+import {MenuModule} from 'primeng/menu';
 import {DataViewModule} from 'primeng/dataview';
 import {ButtonModule} from 'primeng/button';
 import {PanelModule} from 'primeng/panel';
@@ -15,6 +16,7 @@ import {DialogModule} from 'primeng/dialog';
 import {InputTextModule} from 'primeng/inputtext';
 import {RatingModule} from 'primeng/rating';
 import {RippleModule} from 'primeng/ripple';
+import {PanelMenuModule} from 'primeng/panelmenu';
 
 @NgModule({
   imports: [
@@ -29,7 +31,7 @@ import {RippleModule} from 'primeng/ripple';
     RippleModule,
     HttpClientModule,
     RatingModule,
-    FormsModule
+    FormsModule,
   ],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ],

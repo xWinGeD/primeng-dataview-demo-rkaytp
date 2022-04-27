@@ -61,13 +61,13 @@
 			"url": "aws.png"
 		},
 		{
-			"name": "BPER Directory service Group management",
+			"name": "Create new MS SQL Database",
 			"category": "Custom Requests",
 			"version": "Custom",
-			"url": ""
+			"url": "mssql.png"
 		},
 		{
-			"name": "Evolutio Terraform Service",
+			"name": "Setup Terraform Service",
 			"category": "Custom Requests",
 			"version": "Custom",
 			"url": "terraform.png"
