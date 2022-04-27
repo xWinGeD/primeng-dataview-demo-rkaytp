@@ -17,15 +17,15 @@
           <div class="col-12 md:col-6 lg:col-4 xl:col-3">
               <div class="product-grid-item card">
                   <div class="product-grid-item-top">
-                      <div>
+                      <div class="white-space-nowrap overflow-hidden text-overflow-ellipsis">
                           <i class="pi pi-tag product-category-icon"></i>
-                          <span class="product-category">{{product.category}}</span>
+                          <span [attr.title]="product.category" class="product-category">{{product.category}}</span>
                       </div>
                       <span [class]="'product-badge status-' + product.version.toLowerCase()">{{product.version}}</span>
                   </div>
                   <div class="product-grid-item-content">
                     <img [src]="'assets/img/hypervisor/' + product.url" [alt]="product.name"/>
-                    <div class="product-name">{{product.name}}</div>
+                    <div [attr.title]="product.name" class="product-name white-space-nowrap overflow-hidden text-overflow-ellipsis" >{{product.name}}</div>
                   </div>
                   <div class="product-grid-item-bottom" style="justify-content: end;">
                       <p-button icon="pi pi-pencil"></p-button>
