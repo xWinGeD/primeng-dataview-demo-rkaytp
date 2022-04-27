@@ -17,6 +17,10 @@ import {InputTextModule} from 'primeng/inputtext';
 import {RatingModule} from 'primeng/rating';
 import {RippleModule} from 'primeng/ripple';
 import {PanelMenuModule} from 'primeng/panelmenu';
+import { SidebarComponent } from './main/sidebar/sidebar.component';
+import { AppRoutingModule } from './app-routing.module';
+import { BlueprintItemComponent } from './main/blueprint-item/blueprint-item.component';
+import { WidgetsComponent } from './main/widgets/widgets.component';
 
 @NgModule({
   imports: [
@@ -32,8 +36,9 @@ import {PanelMenuModule} from 'primeng/panelmenu';
     HttpClientModule,
     RatingModule,
     FormsModule,
+    AppRoutingModule
   ],
-  declarations: [ AppComponent ],
+  declarations: [ AppComponent, SidebarComponent, BlueprintItemComponent, WidgetsComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })

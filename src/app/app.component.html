@@ -1,9 +1,10 @@
 <div class="grid grid-nogutter">
-  <div class="sidebar hidden md:block md:col-2">
-    <p class="text-center">Sidebar</p>
+  <div class="hidden md:block md:col-2">
+    <app-sidebar></app-sidebar>
   </div>
   <div class="card col-12 md:col-10">
-    <p-dataView #dv [value]="products" [paginator]="true" [rows]="12" filterBy="name" layout="grid">
+    <router-outlet></router-outlet>
+    <!-- <p-dataView #dv [value]="products" [paginator]="true" [rows]="12" filterBy="name" layout="grid">
         <ng-template pTemplate="header" style="padding: .5rem;">
             <div class="grid">
               <span class="p-input-icon-left col-6 lg:col-5 lg:col-offset-3 ">
@@ -33,6 +34,6 @@
               </div>
           </div>
         </ng-template>
-    </p-dataView>
+    </p-dataView> -->
   </div>
 </div>
