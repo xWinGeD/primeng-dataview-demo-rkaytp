@@ -1,19 +1,10 @@
 :host ::ng-deep {
-    .p-dataview .p-dataview-header {
-        padding: 1rem .5rem;
-    }
-
-    .p-dataview-content {
-        min-height: 70vh;
-    }
-
     .p-dropdown {
         width: 14rem;
         font-weight: normal;
     }
     
     .product-name {
-        margin-bottom: 2rem;
         font-size: 1.5rem;
         font-weight: 700;
     }
@@ -78,29 +69,10 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-
-            .product-badge {
-                border-radius: 2px;
-                padding: 0.25em 0.5rem;
-                text-transform: uppercase;
-                font-weight: 700;
-                font-size: 12px;
-                letter-spacing: .3px;
-            }
-
-            .status-system {
-                background: #C8E6C9;
-                color: #256029;
-            }
-
-            .status-custom {
-                background: #FEEDAF;
-                color: #8a5340;
-            }
         }
     
         img {
-            width: 85%;
+            width: 75%;
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
             margin: 2rem 0;
         }
@@ -153,4 +125,24 @@
     padding: 2rem;
     box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+.product-badge {
+    border-radius: 2px;
+    padding: 0.25em 0.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .3px;
+}
+
+.status-system {
+    background: #C8E6C9;
+    color: #256029;
+}
+
+.status-custom {
+    background: #FEEDAF;
+    color: #8a5340;
 }
