@@ -14,6 +14,7 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
   goToBlueprint() {
     this.router.navigate(['/blueprint'])
   }

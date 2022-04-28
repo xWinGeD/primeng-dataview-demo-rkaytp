@@ -4,7 +4,7 @@
             <div class="grid">
                 <span class="p-input-icon-left col-6 lg:col-5 lg:col-offset-3 ">
                     <i class="pi pi-search ml-2"></i>
-                    <input type="search" style="width: 100%;" pInputText placeholder="Search by Operation" (input)="dv.filter($event.target.value)">
+                    <input type="search" style="width: 100%;" pInputText placeholder="Search by Name, Operation" (input)="dv.filter($event.target.value)">
                 </span>
                 <p-button class="col-6 lg:col-4 flex justify-content-end" icon="pi pi-plus" label="Add new" style="height: 3.5rem;"></p-button>
             </div>
@@ -15,17 +15,17 @@
                     <div class="product-grid-item-top">
                         <div class="white-space-nowrap overflow-hidden text-overflow-ellipsis">
                             <i class="pi pi-tag product-category-icon"></i>
-                            <span [attr.title]="product.category" class="product-category">{{product.category}}</span>
+                            <span [attr.title]="product.category" class="product-category">All providers</span>
                         </div>
                         <span [class]="'product-badge status-custom'">custom</span>
                     </div>
                     <div class="product-grid-item-content">
                         <img [src]="'assets/img/' + product.imageUrl" [alt]="product.name"/>
                         <div [attr.title]="product.name" class="product-name white-space-nowrap overflow-hidden text-overflow-ellipsis" >{{product.name}}</div>
-                        <div class="product-description">{{product.operation}}</div>
+                        <div class="product-description" title="TSO Operation name">{{product.operation}}</div>
                     </div>
                     <div class="product-grid-item-bottom" style="justify-content: between;">
-                        <i class="pi pi-th-large mr-4 p-text-secondary" pBadge style="font-size: 2rem" value={{product.controlsCount}}></i>
+                        <i class="pi pi-th-large mr-4 p-text-secondary"  pTooltip="Controls count" tooltipPosition="right" pBadge style="font-size: 2rem" value={{product.controlsCount}}></i>
                         <p-button icon="pi pi-pencil"></p-button>
                     </div>
                 </div>
