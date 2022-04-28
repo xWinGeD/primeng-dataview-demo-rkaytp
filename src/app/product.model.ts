@@ -4,5 +4,12 @@ export interface Product {
     version?: string;
     url?: string;
     description?: string;
-    widgets?: number;
+    widgetsCount?: number;
+}
+
+export interface IWidget {
+    name: string;
+    operation: string;
+    controlsCount: number;
+    imageUrl: string;
 }

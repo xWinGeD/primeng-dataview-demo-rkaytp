@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Product } from 'src/app/product.model';
-import { ProductService } from 'src/app/productservice';
 import { data } from 'src/assets/products';
 
 @Component({
@@ -11,7 +10,7 @@ import { data } from 'src/assets/products';
 export class BlueprintItemComponent {
   products: Product[];
 
-  constructor(private productService: ProductService) {
+  constructor() {
     this.products = data;
   }
 }
