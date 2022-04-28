@@ -20,10 +20,12 @@
                         <span [class]="'product-badge status-' + product.version.toLowerCase()">{{product.version}}</span>
                     </div>
                     <div class="product-grid-item-content">
-                    <img [src]="'assets/img/hypervisor/' + product.url" [alt]="product.name"/>
-                    <div [attr.title]="product.name" class="product-name white-space-nowrap overflow-hidden text-overflow-ellipsis" >{{product.name}}</div>
+                        <img [src]="'assets/img/hypervisor/' + product.url" [alt]="product.name"/>
+                        <div [attr.title]="product.name" class="product-name white-space-nowrap overflow-hidden text-overflow-ellipsis" >{{product.name}}</div>
+                        <!-- <div class="product-description">Widgets: {{product.widgetsCount}}</div> -->
                     </div>
-                    <div class="product-grid-item-bottom" style="justify-content: end;">
+                    <div class="product-grid-item-bottom" style="justify-content: between;">
+                        <i class="pi pi-th-large mr-4 p-text-secondary" pBadge style="font-size: 2rem" value={{product.widgetsCount}}></i>
                         <p-button icon="pi pi-pencil"></p-button>
                     </div>
                 </div>

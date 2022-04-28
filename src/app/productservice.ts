@@ -1,14 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-import { Product } from './product';
-
-interface IData {
-  "name": string;
-  "category": string;
-  "version": string;
-  "url": string;
-}
+import { Product } from './product.model';
 
 @Injectable()
 export class ProductService {

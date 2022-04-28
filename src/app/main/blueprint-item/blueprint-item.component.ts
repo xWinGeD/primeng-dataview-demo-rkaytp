@@ -1,19 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-import { Product } from 'src/app/product';
+import { Component, Input, OnInit } from '@angular/core';
+import { Product } from 'src/app/product.model';
 import { ProductService } from 'src/app/productservice';
+import { data } from 'src/assets/products';
 
 @Component({
   selector: 'app-blueprint-item',
   templateUrl: './blueprint-item.component.html',
   styleUrls: ['./blueprint-item.component.scss']
 })
-export class BlueprintItemComponent implements OnInit {
+export class BlueprintItemComponent {
   products: Product[];
 
   constructor(private productService: ProductService) {
-  }
-
-  ngOnInit() {
-    this.productService.getProducts().then(data => this.products = data);
+    this.products = data;
   }
 }

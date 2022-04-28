@@ -16,11 +16,11 @@ import {DialogModule} from 'primeng/dialog';
 import {InputTextModule} from 'primeng/inputtext';
 import {RatingModule} from 'primeng/rating';
 import {RippleModule} from 'primeng/ripple';
-import {PanelMenuModule} from 'primeng/panelmenu';
-import { SidebarComponent } from './main/sidebar/sidebar.component';
-import { AppRoutingModule } from './app-routing.module';
-import { BlueprintItemComponent } from './main/blueprint-item/blueprint-item.component';
-import { WidgetsComponent } from './main/widgets/widgets.component';
+import {SidebarComponent} from './main/sidebar/sidebar.component';
+import {AppRoutingModule} from './app-routing.module';
+import {BlueprintItemComponent} from './main/blueprint-item/blueprint-item.component';
+import {WidgetsComponent} from './main/widgets/widgets.component';
+import {BadgeModule} from 'primeng/badge';
 
 @NgModule({
   imports: [
@@ -36,7 +36,8 @@ import { WidgetsComponent } from './main/widgets/widgets.component';
     HttpClientModule,
     RatingModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BadgeModule
   ],
   declarations: [ AppComponent, SidebarComponent, BlueprintItemComponent, WidgetsComponent ],
   bootstrap:    [ AppComponent ],
