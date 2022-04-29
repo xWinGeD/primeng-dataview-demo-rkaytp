@@ -4,5 +4,5 @@ export interface Product {
     version?: string;
     url?: string;
     description?: string;
-    widgets?: number;
+    widgetsCount?: number;
 }

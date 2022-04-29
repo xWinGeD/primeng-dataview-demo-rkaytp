@@ -13,5 +13,6 @@ export class BlueprintItemComponent {
 
   constructor(private productService: ProductService) {
     this.products = data;
+    setTimeout(()=> console.log(this.products), 0)
   }
 }
