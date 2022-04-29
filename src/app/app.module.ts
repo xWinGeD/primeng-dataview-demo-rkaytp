@@ -19,9 +19,12 @@ import {InputTextModule} from 'primeng/inputtext';
 import {RatingModule} from 'primeng/rating';
 import {RippleModule} from 'primeng/ripple';
 import {SidebarComponent} from './main/sidebar/sidebar.component';
-
 import {BadgeModule} from 'primeng/badge';
 import {TooltipModule} from 'primeng/tooltip';
+import {PanelMenuModule} from 'primeng/panelmenu';
+import {MenuModule} from 'primeng/menu';
+import {StyleClassModule} from 'primeng/styleclass';
+import {SlideMenuModule} from 'primeng/slidemenu';
 
 @NgModule({
   imports: [
@@ -39,7 +42,11 @@ import {TooltipModule} from 'primeng/tooltip';
     FormsModule,
     AppRoutingModule,
     BadgeModule,
-    TooltipModule
+    TooltipModule,
+    PanelMenuModule,
+    MenuModule,
+    StyleClassModule,
+    SlideMenuModule
   ],
   declarations: [ AppComponent, SidebarComponent, BlueprintItemComponent, WidgetsComponent ],
   bootstrap:    [ AppComponent ],
