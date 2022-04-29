@@ -6,3 +6,10 @@ export interface Product {
     description?: string;
     widgetsCount?: number;
 }
+
+export interface IWidget {
+    name: string;
+    operation: string;
+    controlsCount: number;
+    imageUrl: string;
+}
