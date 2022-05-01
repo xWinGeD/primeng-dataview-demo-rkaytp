@@ -22,10 +22,6 @@ export class SidebarComponent implements OnInit {
               styleClass: 'sidebar__blueprint-wrapper',
               items: [
                   {label: 'Blueprint items', icon: 'pi pi-fw pi-table', routerLink: ['/blueprint']},
-                  {label: 'Additional item', icon: 'pi pi-fw pi-check-square'},
-                  {label: 'Additional item', icon: 'pi pi-fw pi-bars'},
-                  {label: 'Additional item', icon: 'pi pi-fw pi-cloud-upload'},
-                  {label: 'Additional item', icon: 'pi pi-fw pi-database'},
               ]
           },
           {
@@ -34,10 +30,6 @@ export class SidebarComponent implements OnInit {
               styleClass: 'sidebar__widgets-wrapper',
               items: [
                   {label: 'Widgets items', icon: 'pi pi-fw pi-table', routerLink: ['/widgets']},
-                  {label: 'Additional item', icon: 'pi pi-fw pi-tags'},
-                  {label: 'Additional item', icon: 'pi pi-fw pi-sliders-h'},
-                  {label: 'Additional item', icon: 'pi pi-fw pi-sitemap'},
-                  {label: 'Additional item', icon: 'pi pi-fw pi-info-circle'},
               ]
           },
       ];
